@@ -1,0 +1,10 @@
+%{
+  "cowboy": {:hex, :cowboy, "2.9.0", "865dd8b6607e14cf03282e10e934023a1bd8be6f6bacf921a7e2a96d800cd452", [:make, :rebar3], [{:cowlib, "2.11.0", [hex: :cowlib, repo: "hexpm", optional: false]}, {:ranch, "1.8.0", [hex: :ranch, repo: "hexpm", optional: false]}], "hexpm", "2c729f934b4e1aa149aff882f57c6372c15399a20d54f65c8d67bef583021bde"},
+  "cowlib": {:hex, :cowlib, "2.11.0", "0b9ff9c346629256c42ebe1eeb769a83c6cb771a6ee5960bd110ab0b9b872063", [:make, :rebar3], [], "hexpm", "2b3e9da0b21c4565751a6d4901c20d1b4cc25cbb7fd50d91d2ab6dd287bc86a9"},
+  "ex_phone_number": {:hex, :ex_phone_number, "0.2.1", "c332d5119b0ffebe3f3e4c1d5264d544b972d5d350230d7b5b1586bbfaf1036e", [:mix], [{:sweet_xml, "~> 0.6.5", [hex: :sweet_xml, repo: "hexpm", optional: false]}], "hexpm", "988acbe6ffb70ee33164ad5c185dc6767028369280dcbb4ceda4bc66373b2b10"},
+  "grpc": {:git, "https://github.com/elixir-grpc/grpc.git", "eff8a8828d27ddd7f63a3c1dd5aae86246df215e", []},
+  "gun": {:hex, :grpc_gun, "2.0.0", "f99678a2ab975e74372a756c86ec30a8384d3ac8a8b86c7ed6243ef4e61d2729", [:rebar3], [{:cowlib, "~> 2.8.0", [hex: :cowlib, repo: "hexpm", optional: false]}], "hexpm", "03dbbca1a9c604a0267a40ea1d69986225091acb822de0b2dbea21d5815e410b"},
+  "protobuf": {:hex, :protobuf, "0.7.1", "7d1b9f7d9ecb32eccd96b0c58572de4d1c09e9e3bc414e4cb15c2dce7013f195", [:mix], [], "hexpm", "6eff7a5287963719521c82e5d5b4583fd1d7cdd89ad129f0ea7d503a50a4d13f"},
+  "ranch": {:hex, :ranch, "1.8.0", "8c7a100a139fd57f17327b6413e4167ac559fbc04ca7448e9be9057311597a1d", [:make, :rebar3], [], "hexpm", "49fbcfd3682fab1f5d109351b61257676da1a2fdbe295904176d5e521a2ddfe5"},
+  "sweet_xml": {:hex, :sweet_xml, "0.6.6", "fc3e91ec5dd7c787b6195757fbcf0abc670cee1e4172687b45183032221b66b8", [:mix], [], "hexpm", "2e1ec458f892ffa81f9f8386e3f35a1af6db7a7a37748a64478f13163a1f3573"},
+}

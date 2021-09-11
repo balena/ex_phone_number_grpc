@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package phone_number;
+
+import "google/protobuf/wrappers.proto";
+
+service PhoneNumber {
+  rpc Parse (ParseRequest) returns (PhoneNumberReply) {}
+  rpc IsValidNumber (PhoneNumberReply) returns (google.protobuf.BoolValue) {}
+  rpc GetRegionCodeForNumber (PhoneNumberReply) returns (google.protobuf.StringValue) {}
+}
+
+message ParseRequest {
+  string number_to_parse = 1;
+  string default_region = 2;
+}
+
+message PhoneNumberReply {
+  int32 country_code = 1;
+  int64 national_number = 2;
+  string extension = 3;
+  google.protobuf.BoolValue italian_leading_zero = 4;
+  int32 number_of_leading_zeros = 5;
+  string raw_input = 6;
+  string country_code_source = 7;
+  string preferred_domestic_carrier_code = 8;
+}
