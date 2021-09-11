@@ -4,11 +4,13 @@ defmodule PhoneNumber do
   end
 
   def parse(channel, number_to_parse, default_region) do
-    channel
-    |> PhoneNumber.PhoneNumber.Stub.parse(
-      number_to_parse: number_to_parse,
-      default_region: default_region
-    )
+    request =
+      PhoneNumber.ParseRequest.new(
+        number_to_parse: number_to_parse,
+        default_region: default_region
+      )
+
+    PhoneNumber.PhoneNumber.Stub.parse(channel, request)
   end
 
   def is_valid_number(channel, reply) do
