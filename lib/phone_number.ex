@@ -1,5 +1,5 @@
 defmodule PhoneNumber do
-  def channel() do
+  def connect() do
     GRPC.Stub.connect("localhost:5001")
   end
 
